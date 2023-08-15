@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alnick Clores</title>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between items-center max-w-[1240px] w-full mx-auto h-20 px-8 text-[#45adff] bg-[#02021b] md:max-w-full fixed top-0"
+    >
+      <div>
+        <a
+          class="text-2xl cursor-pointer uppercase font-bold tracking-widest md:text-2xl"
+          >AC</a
+        >
+      </div>
+
+      <!-- root nav - mobile nav -->
+      <ul
+        class="flex flex-col items-center justify-center fixed left-0 top-0 h-screen w-full uppercase mt-20 text-[#8893b0] bg-[#02021b] transition-opacity ease-in-out duration-1000 hidden md:hidden"
+        id="mobileMenu"
+      >
+        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
+          <a href="#about">About</a>
+        </li>
+        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
+          <a href="#projets">Projects</a>
+        </li>
+        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
+          <a href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <div class="md:hidden block" id="toggleButton">
+        <i class="fa-solid fa-bars text-2xl"></i>
+        <i class="fa-solid fa-x hidden text-2xl"></i>
+      </div>
+
+      <!-- desktop nav -->
+      <ul class="hidden md:flex md:uppercase">
+        <li class="text-l m-4 hover:text-blue-200">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="text-l m-4 hover:text-blue-200">
+          <a href="#about">About</a>
+        </li>
+        <li class="text-l m-4 hover:text-blue-200">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="text-l m-4 hover:text-blue-200">
+          <a href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- hero -->
+    <div
+      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full h-screen text-[#ccd6f6] bg-[#02021b]"
+    >
+      <div class="flex flex-col justify-center gap-4 m-12">
+        <p class="text-lg md:text-2xl lg:text-3xl text-[#45adff]">
+          Hello, I am
+        </p>
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold">
+          Alnick Clores.
+        </h1>
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-[#8892b0]">
+          Front-end Developer.
+        </h1>
+        <p class="text-lg md:2xl lg:3xl">
+          I'm currently Junior
+          <span class="text-[#45adff]">IT student</span> based on Valenzuela,
+          Philippines.
+        </p>
+      </div>
+
+      <!-- important links -->
+      <ul class="flex gap-5">
+        <li>
+          <a href="https://github.com/AlnickClores" target="_blank"
+            ><i class="fa-brands fa-github text-2xl hover:text-[#8892b0]"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/alnick-clores-469307243/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin text-2xl hover:text-[#8892b0]"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/sprtrmp06" target="_blank"
+            ><i class="fa-brands fa-twitter text-2xl hover:text-[#8892b0]"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/alnick.clores/" target="_blank"
+            ><i class="fa-brands fa-instagram text-2xl hover:text-[#8892b0]"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-green-400 h-9" id="about">
+      <h1 class="text-center font-bold">SITE UNDER CONSTUCTION</h1>
+      <h1>ABOUT ME</h1>
+    </div>
+    <div class="bg-green-500 h-9" id="projects">
+      <h1>PROJECTS</h1>
+    </div>
+    <div class="bg-green-600 h-9" id="contacts">
+      <h1>CONTACTS</h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
