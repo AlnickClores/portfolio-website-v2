@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,45 +20,64 @@
       <div>
         <a
           class="text-2xl cursor-pointer uppercase font-bold tracking-widest md:text-2xl"
+          href="index.html"
           >AC</a
         >
       </div>
 
       <!-- root nav - mobile nav -->
       <ul
-        class="flex flex-col items-center justify-center fixed left-0 top-0 h-screen w-full uppercase mt-20 text-[#8893b0] bg-[#02021b] transition-opacity ease-in-out duration-1000 hidden md:hidden"
+        class="navbar flex flex-col items-center justify-center fixed left-0 top-0 h-screen w-full z-50 uppercase mt-20 bg-[#02021b] bg-opacity-90 hidden md:hidden transition-all ease-in-out duration-500"
         id="mobileMenu"
       >
-        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
-          <a href="index.html">Home</a>
+        <li
+          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
+        >
+          <a class="nav-link" href="#hero">Home</a>
         </li>
-        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
-          <a href="#about">About</a>
+        <li
+          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
+        >
+          <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
-          <a href="#projets">Projects</a>
+        <li
+          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
+        >
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
-        <li class="text-2xl font-semibold my-5 hover:text-[#8892b0]">
-          <a href="#contacts">Contacts</a>
+        <li
+          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
+        >
+          <a class="nav-link" href="#contacts">Contacts</a>
         </li>
       </ul>
-      <div class="md:hidden block" id="toggleButton">
+
+      <!-- hamburger and cross icons -->
+      <div class="md:hidden block cursor-pointer" id="toggleButton">
         <i class="fa-solid fa-bars text-2xl"></i>
         <i class="fa-solid fa-x hidden text-2xl"></i>
       </div>
 
       <!-- desktop nav -->
       <ul class="hidden md:flex md:uppercase">
-        <li class="text-l m-4 hover:text-blue-200">
-          <a href="index.html">Home</a>
+        <li
+          class="text-l m-4 hover:text-blue-200 hover:transition ease-in-out duration-500"
+        >
+          <a href="#hero">Home</a>
         </li>
-        <li class="text-l m-4 hover:text-blue-200">
+        <li
+          class="text-l m-4 hover:text-blue-200 hover:transition ease-in-out duration-500"
+        >
           <a href="#about">About</a>
         </li>
-        <li class="text-l m-4 hover:text-blue-200">
+        <li
+          class="text-l m-4 hover:text-blue-200 hover:transition ease-in-out duration-500"
+        >
           <a href="#projects">Projects</a>
         </li>
-        <li class="text-l m-4 hover:text-blue-200">
+        <li
+          class="text-l m-4 hover:text-blue-200 hover:transition ease-in-out duration-500"
+        >
           <a href="#contacts">Contacts</a>
         </li>
       </ul>
@@ -67,6 +86,7 @@
     <!-- hero -->
     <div
       class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full h-screen text-[#ccd6f6] bg-[#02021b]"
+      id="hero"
     >
       <div class="flex flex-col justify-center gap-4 p-12">
         <p class="text-lg md:text-2xl lg:text-3xl text-[#45adff]">
@@ -78,43 +98,22 @@
         <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-[#8892b0]">
           Front-end Developer.
         </h1>
-        <p class="text-lg">
+        <p class="text-lg md:text-xl lg:text-2xl">
           I'm currently Junior
           <span class="text-[#45adff]">IT student</span> based on Valenzuela,
           Philippines.
         </p>
       </div>
-
-      <!-- important links -->
-      <ul class="flex gap-5">
-        <li>
-          <a href="https://github.com/AlnickClores" target="_blank"
-            ><i class="fa-brands fa-github text-2xl hover:text-[#8892b0]"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/alnick-clores-469307243/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin text-2xl hover:text-[#8892b0]"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/sprtrmp06" target="_blank"
-            ><i class="fa-brands fa-twitter text-2xl hover:text-[#8892b0]"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/alnick.clores/" target="_blank"
-            ><i class="fa-brands fa-instagram text-2xl hover:text-[#8892b0]"></i
-          ></a>
-        </li>
-      </ul>
+      <button
+        class="border border-[#45adff] rounded py-3 px-10 md:py-5 md:px-12 lg:px-20 bg-transparent hover:bg-[#45adff]/20"
+      >
+        <a class="text-[#45adff] font-semibold" href="#">Resume</a>
+      </button>
     </div>
 
     <!-- About Me Section -->
     <div
-      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full h-screen bg-[#02021b]"
+      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full bg-[#02021b]"
       id="about"
     >
       <div class="flex flex-col gap-4 p-12 max-w-[670px] lg:max-w-[820px]">
@@ -126,8 +125,7 @@
         </p>
         <p class="text-[#8892b0] lg:text-xl">
           My primary objective at the moment revolves around deepening my
-          proficiency in website development, particularly on the front-end
-          aspect.
+          proficiency in web development, particularly on the front-end aspect.
         </p>
         <p class="text-[#8892b0] lg:text-xl">
           Beyond coding, I derive pleasure from watching movies, engaging in
@@ -137,10 +135,12 @@
 
       <!-- tech stacks -->
       <div class="flex flex-col gap-3 px-12">
-        <h1 class="text-[#ccd6f6] text-2xl md:text-2xl lg:text-3xl">
+        <h1
+          class="text-[#ccd6f6] text-2xl md:text-2xl lg:text-3xl font-semibold"
+        >
           Technologies I have been actively engaged with lately:
         </h1>
-        <ul class="my-3">
+        <ul class="my-3 list-disc ml-3">
           <li class="text-[#8892b0] text-sm lg:text-lg my-2">HTML</li>
           <li class="text-[#8892b0] text-sm lg:text-lg my-2">
             JavaScript (ES6+)
@@ -152,15 +152,117 @@
       <!-- img here -->
     </div>
 
-    <!-- Projects Section 
-    <div class="bg-blue-500 h-9" id="projects">
-      <h1>Things I've Built</h1>
+    <!-- Projects Section  -->
+    <div
+      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full bg-[#02021b]"
+      id="projects"
+    >
+      <div class="flex flex-col gap-4 p-12 max-w-[670px] lg:max-w-[820px]">
+        <h1 class="text-[#ccd6f6] font-bold text-2xl lg:text-5xl">
+          Things I've Built
+        </h1>
+        <div class="grid my-4 gap-5">
+          <div>
+            <h1 class="text-[#e9e8e8] lg:text-2xl font-bold">Cumulus</h1>
+
+            <!-- img here -->
+
+            <p class="text-[#8892b0] lg:text-xl">
+              A web app for monitoring the weather. Using weather API from
+              <a
+                class="text-[#45adff] hover:underline underline-offset-4 transition ease-in-out duration-1000"
+                href="https://openweathermap.org/"
+                target="_blank"
+                >OpenWeather</a
+              >
+            </p>
+          </div>
+          <div>
+            <h1 class="text-[#e9e8e8] lg:text-2xl font-bold">To-Do List</h1>
+
+            <!-- img here -->
+
+            <p class="text-[#8892b0] lg:text-xl">- Website description -</p>
+          </div>
+          <div>
+            <h1 class="text-[#e9e8e8] lg:text-2xl font-bold">Woody.org</h1>
+
+            <!-- img here -->
+
+            <p class="text-[#8892b0] lg:text-xl">- Website description -</p>
+          </div>
+          <div>
+            <h1 class="text-[#e9e8e8] lg:text-2xl font-bold">
+              Quote Generator
+            </h1>
+
+            <!-- img here -->
+
+            <p class="text-[#8892b0] lg:text-xl">- Website description -</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    Contacts Section
-    <div class="bg-blue-600 h-9" id="contacts">
-      <h1>Get In Touch</h1>
-    </div> -->
+    <!-- Contacts Section -->
+    <div
+      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full bg-[#02021b]"
+      id="contacts"
+    >
+      <div
+        class="flex flex-col gap-4 p-12 max-w-[670px] lg:max-w-[820px] text-center"
+      >
+        <h1 class="text-[#ccd6f6] font-bold text-2xl lg:text-5xl">
+          Get In Touch
+        </h1>
+        <p class="text-[#8892b0] lg:text-xl">
+          I am seeking for new opportunities at the moment, I'm readily
+          available in my inbox. Whether you have inquiries or simply wish to
+          connect, I'll do my utmost to respond promptly!
+        </p>
+      </div>
+
+      <!-- important links -->
+      <ul class="flex gap-10">
+        <li>
+          <a href="https://github.com/AlnickClores" target="_blank"
+            ><i
+              class="fa-brands fa-github text-2xl text-[#ccd6f6] hover:text-[#8892b0] hover:transition ease-in-out duration-500"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/alnick-clores-469307243/"
+            target="_blank"
+            ><i
+              class="fa-brands fa-linkedin text-2xl text-[#ccd6f6] hover:text-[#8892b0] hover:transition ease-in-out duration-500"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/sprtrmp06" target="_blank"
+            ><i
+              class="fa-brands fa-twitter text-2xl text-[#ccd6f6] hover:text-[#8892b0] hover:transition ease-in-out duration-500"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/alnick.clores/" target="_blank"
+            ><i
+              class="fa-brands fa-instagram text-2xl text-[#ccd6f6] hover:text-[#8892b0] hover:transition ease-in-out duration-500"
+            ></i
+          ></a>
+        </li>
+      </ul>
+      <span class="m-10">
+        <p
+          class="text-[#45aeffa8] hover:text-[#45aeff] text-sm font-semibold hover:underline underline-offset-4 transition ease-in-out duration-500 cursor-pointer"
+        >
+          Built by Alnick Clores
+        </p>
+      </span>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
