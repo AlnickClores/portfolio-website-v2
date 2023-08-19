@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Alnick Clores</title>
   </head>
-  <body>
+  <body class="bg-[#02021b]">
     <nav
-      class="flex justify-between items-center max-w-[1240px] w-full mx-auto h-20 px-8 text-[#45adff] bg-[#02021b] md:max-w-full fixed top-0"
+      class="flex justify-between items-center max-w-[1240px] w-full mx-auto h-20 px-8 text-[#45adff] bg-[#02021b] md:max-w-full fix top-0"
     >
       <div>
         <a
@@ -88,17 +88,15 @@
       class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full h-screen text-[#ccd6f6] bg-[#02021b]"
       id="hero"
     >
-      <div class="flex flex-col justify-center gap-4 p-12">
-        <p class="text-lg md:text-2xl lg:text-3xl text-[#45adff]">
-          Hello, I am
-        </p>
-        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold">
+      <div class="flex flex-col justify-center gap-3 md:gap-5 p-5">
+        <p class="md:text-2xl lg:text-3xl text-[#45adff]">Hello, I am</p>
+        <h1 class="text-2xl md:text-5xl lg:text-7xl font-bold">
           Alnick Clores.
         </h1>
-        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-[#8892b0]">
+        <h1 class="text-2xl md:text-5xl lg:text-7xl font-bold text-[#8892b0]">
           Front-end Developer.
         </h1>
-        <p class="text-lg md:text-xl lg:text-2xl">
+        <p class="md:text-xl lg:text-2xl">
           I'm currently Junior
           <span class="text-[#45adff]">IT student</span> based on Valenzuela,
           Philippines.
@@ -113,40 +111,42 @@
 
     <!-- About Me Section -->
     <div
-      class="flex flex-col justify-center items-center pt-10 max-w-[1240px] md:max-w-full bg-[#02021b]"
+      class="flex flex-col justify-center items-center pt-20 max-w-[1240px] md:max-w-full bg-[#02021b]"
       id="about"
     >
-      <div class="flex flex-col gap-4 p-12 max-w-[670px] lg:max-w-[820px]">
+      <div class="flex flex-col gap-4 p-5 max-w-[670px] lg:max-w-[820px]">
         <h1 class="text-[#ccd6f6] font-bold text-2xl lg:text-5xl">About Me</h1>
-        <p class="text-[#8892b0] lg:text-xl">
+        <p class="text-[#8892b0] md:text-base lg:text-xl">
           Hello! My name is Alnick and I enjoy building things on web. My
           fascination with technology began in grade school when my parents
           introduced me to computers and the internet.
         </p>
-        <p class="text-[#8892b0] lg:text-xl">
+        <p class="text-[#8892b0] md:text-base lg:text-xl">
           My primary objective at the moment revolves around deepening my
           proficiency in web development, particularly on the front-end aspect.
         </p>
-        <p class="text-[#8892b0] lg:text-xl">
+        <p class="text-[#8892b0] md:text-base lg:text-xl">
           Beyond coding, I derive pleasure from watching movies, engaging in
           video games, and cherishing moments spent with my loved ones.
         </p>
       </div>
 
       <!-- tech stacks -->
-      <div class="flex flex-col gap-3 px-12">
+      <div class="flex flex-col gap-3 px-8">
         <h1
           class="text-[#ccd6f6] text-2xl md:text-2xl lg:text-3xl font-semibold"
         >
           Technologies I have been actively engaged with lately:
         </h1>
         <ul class="my-3 list-disc ml-3">
-          <li class="text-[#8892b0] text-sm lg:text-lg my-2">HTML</li>
-          <li class="text-[#8892b0] text-sm lg:text-lg my-2">
+          <li class="text-[#8892b0] md:text-base lg:text-lg my-2">HTML</li>
+          <li class="text-[#8892b0] md:text-base lg:text-lg my-2">
             JavaScript (ES6+)
           </li>
-          <li class="text-[#8892b0] text-sm lg:text-lg my-2">React</li>
-          <li class="text-[#8892b0] text-sm lg:text-lg my-2">Tailwind CSS</li>
+          <li class="text-[#8892b0] md:text-base lg:text-lg my-2">React</li>
+          <li class="text-[#8892b0] md:text-base lg:text-lg my-2">
+            Tailwind CSS
+          </li>
         </ul>
       </div>
       <!-- img here -->
@@ -161,7 +161,7 @@
         Things I've Built
       </h1>
       <div
-        class="grid md:grid-cols-2 gap-8 md:gap-24 p-12 max-w-[670px] lg:max-w-[820px]"
+        class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 p-5 max-w-[670px] lg:max-w-[820px]"
       >
         <div class="flex flex-col justify-center">
           <a
@@ -174,7 +174,7 @@
           </a>
 
           <img class="mt-5" src="../src/assets/Cumulus.png" alt="Cumulus" />
-          <p class="text-[#8892b0] lg:text-xl">
+          <p class="text-[#8892b0] text-sm md:text-base lg:text-xl">
             A web app for monitoring the weather. Using weather API from
             <a
               class="text-[#45adff] hover:underline underline-offset-4 transition ease-in-out duration-1000"
@@ -183,21 +183,21 @@
               >OpenWeather.</a
             >
           </p>
-          <div class="flex items-center gap-3 mt-5 text-center">
+          <div class="flex items-center gap-3 mt-5 text-center min-w-0">
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >HTML</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >CSS</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >React</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >OpenWeather API</span
             >
           </div>
@@ -212,21 +212,21 @@
             <i class="fa-solid fa-up-right-from-square text-sm"></i>
           </a>
           <img class="mt-5" src="../src/assets/TodoList.png" alt="Todo-List" />
-          <p class="text-[#8892b0] lg:text-xl">
+          <p class="text-[#8892b0] text-sm md:text-base lg:text-xl">
             A web app that helps to boost your productivity by keeping track or
             managing the tasks you have.
           </p>
           <div class="flex items-center gap-3 mt-5">
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >HTML</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >CSS</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >React</span
             >
           </div>
@@ -241,25 +241,25 @@
             <i class="fa-solid fa-up-right-from-square text-sm"></i>
           </a>
           <img class="mt-5" src="../src/assets/Woody.org.png" alt="Woody.org" />
-          <p class="text-[#8892b0] lg:text-xl">
+          <p class="text-[#8892b0] text-sm md:text-base lg:text-xl">
             The objective of this website is to educate people about self
             defense and lesses the crime rate in the community.
           </p>
           <div class="flex items-center gap-3 mt-5">
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >HTML</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >CSS</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >PHP</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >Oracle</span
             >
           </div>
@@ -278,22 +278,22 @@
             src="../src/assets/QuoteGenerator.png"
             alt="Quote Generator"
           />
-          <p class="text-[#8892b0] lg:text-xl">
+          <p class="text-[#8892b0] text-sm md:text-base lg:text-xl">
             A website that will give you a random motivational quote. The main
             goal of this website is to motivate people who are struggling with
             their lives.
           </p>
           <div class="flex items-center gap-3 mt-5">
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >HTML</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >CSS</span
             >
             <span
-              class="text-[#45adff] text-sm font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
+              class="text-[#45adff] text-xs font-semibold rounded-xl bg-[#45beff3a] px-3 py-1"
               >Javascript</span
             >
           </div>
@@ -303,7 +303,7 @@
 
     <!-- Contacts Section -->
     <div
-      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full bg-[#02021b]"
+      class="flex flex-col justify-center items-center max-w-[1240px] md:max-w-full bg-[#02021b] h-screen"
       id="contacts"
     >
       <div
@@ -312,7 +312,7 @@
         <h1 class="text-[#ccd6f6] font-bold text-2xl lg:text-5xl">
           Get In Touch
         </h1>
-        <p class="text-[#8892b0] lg:text-xl">
+        <p class="text-[#8892b0] text-sm md:text-base lg:text-xl">
           I am seeking for new opportunities at the moment, I'm readily
           available in my inbox. Whether you have inquiries or simply wish to
           connect, I'll do my utmost to respond promptly!
@@ -354,7 +354,7 @@
       </ul>
       <span class="m-10">
         <p
-          class="text-[#45aeffa8] hover:text-[#45aeff] text-sm font-semibold hover:underline underline-offset-4 transition ease-in-out duration-500 cursor-pointer"
+          class="text-[#45aeff] hover:text-[#45aeffa8] text-sm font-semibold hover:underline underline-offset-4 transition ease-in-out duration-500 cursor-pointer"
         >
           Built by Alnick Clores
         </p>
