@@ -15,7 +15,7 @@
   </head>
   <body class="bg-[#02021b]">
     <nav
-      class="flex justify-between items-center max-w-[1240px] w-full mx-auto h-20 px-8 text-[#45adff] bg-[#02021b] md:max-w-full fix top-0"
+      class="flex justify-between items-center max-w-[1240px] w-full mx-auto h-20 px-8 text-[#45adff] bg-[#02021b] md:max-w-full fixed top-0 z-50"
     >
       <div>
         <a
@@ -24,33 +24,6 @@
           >AC</a
         >
       </div>
-
-      <!-- root nav - mobile nav -->
-      <ul
-        class="navbar flex flex-col items-center justify-center fixed left-0 top-0 h-screen w-full z-50 uppercase mt-20 bg-[#02021b] bg-opacity-90 hidden md:hidden transition-all ease-in-out duration-500"
-        id="mobileMenu"
-      >
-        <li
-          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
-        >
-          <a class="nav-link" href="#hero">Home</a>
-        </li>
-        <li
-          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
-        >
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li
-          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
-        >
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li
-          class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200"
-        >
-          <a class="nav-link" href="#contacts">Contacts</a>
-        </li>
-      </ul>
 
       <!-- hamburger and cross icons -->
       <div class="md:hidden block cursor-pointer" id="toggleButton">
@@ -82,6 +55,25 @@
         </li>
       </ul>
     </nav>
+
+    <!-- mobile nav -->
+    <ul
+      class="navbar flex flex-col items-center justify-center fixed w-full h-screen -left-full uppercase bg-[#02021b] bg-opacity-90 z-30 md:hidden transition-all ease-in-out duration-500"
+      id="mobileMenu"
+    >
+      <li class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200">
+        <a class="nav-link" href="#hero">Home</a>
+      </li>
+      <li class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="text-2xl font-semibold my-5 text-blue-200 hover:text-blue-200">
+        <a class="nav-link" href="#contacts">Contacts</a>
+      </li>
+    </ul>
 
     <!-- hero -->
     <div
@@ -149,7 +141,7 @@
           </li>
         </ul>
       </div>
-      <!-- img here -->
+      <!-- my img here -->
     </div>
 
     <!-- Projects Section  -->
@@ -237,7 +229,7 @@
             href="https://alnickclores.github.io/Woody-org_final/WebDev_Defense_/Homepage.html"
             target="_blank"
           >
-            <h1 class="text-lg lg:text-2xl font-bold">Woody,org</h1>
+            <h1 class="text-lg lg:text-2xl font-bold">Woody.org</h1>
             <i class="fa-solid fa-up-right-from-square text-sm"></i>
           </a>
           <img class="mt-5" src="../src/assets/Woody.org.png" alt="Woody.org" />
