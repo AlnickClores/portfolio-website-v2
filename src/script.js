@@ -4,13 +4,13 @@ const barsIcon = toggleButton.querySelector(".fa-bars");
 const xIcon = toggleButton.querySelector(".fa-x");
 
 toggleButton.addEventListener("click", function () {
-  mobileMenu.classList.toggle("-left-full");
+  mobileMenu.classList.toggle("hidden");
   barsIcon.classList.toggle("hidden");
   xIcon.classList.toggle("hidden");
 });
 
 function closeNavbar() {
-  mobileMenu.classList.add("left-0");
+  mobileMenu.classList.add("hidden");
   barsIcon.classList.remove("hidden");
   xIcon.classList.add("hidden");
 }

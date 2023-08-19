@@ -550,16 +550,8 @@ video {
   top: 0px;
 }
 
-.right-full {
-  right: 100%;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.-left-full {
-  left: -100%;
+.right-\[-100\%\] {
+  right: -100%;
 }
 
 .z-30 {
@@ -859,6 +851,12 @@ video {
 
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
